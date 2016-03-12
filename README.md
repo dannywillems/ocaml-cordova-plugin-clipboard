@@ -6,7 +6,7 @@ Binding to
 [Example
 application](https://github.com/dannywillems/ocaml-cordova-plugin-clipboard-example).
 
-## What does cordova-plugin-clipboard do ?
+## What does cordova-universal-clipboard do ?
 
 ```
 This plugin provides access to the device's accelerometer. The accelerometer is
