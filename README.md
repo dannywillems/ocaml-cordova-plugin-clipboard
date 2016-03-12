@@ -17,12 +17,12 @@ Although the object is attached to the global scoped navigator, it is not
 available until after the deviceready event.
 ```
 
-Source: [cordova-plugin-clipboard](https://github.com/VersoSolutions/CordovaClipboard)
+Source: [cordova-universal-clipboard](https://github.com/VersoSolutions/CordovaClipboard)
 
 ## How to use ?
 
 See the official documentation
-[cordova-plugin-clipboard](https://github.com/VersoSolutions/CordovaClipboard)
+[cordova-universal-clipboard](https://github.com/VersoSolutions/CordovaClipboard)
 
 ## ! BE CAREFUL !
 
