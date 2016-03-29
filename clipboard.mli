@@ -1,20 +1,41 @@
-class type clipboard =
+(* -------------------------------------------------------------------------- *)
+class clipboard : Ojs.t ->
   object
+    inherit Ojs.obj
     (* --------------- COPY --------------- *)
-    (* No need to success and error callbacks *)
-    method copy : Js.js_string Js.t -> unit Js.meth
-    (* No need of error callback *)
-    method copy_succ : Js.js_string Js.t -> (unit -> unit) -> unit Js.meth
-    (* Need both *)
-    method copy_cb : Js.js_string Js.t -> (unit -> unit) -> (Js.js_string Js.t ->
-      unit) -> unit Js.meth
+    (* copy [str] *)
+    method copy         : string -> unit
+    [@@js.call "copy"]
+
+    (* copy [str] [success_cb] *)
+    method copy_succ    : string          ->
+                          (unit -> unit)  ->
+                          unit
+    [@@js.call "copy"]
+
+    (* copy [str] [success_cb] [error_cb] *)
+    method copy_cb      : string            ->
+                          (unit -> unit)    ->
+                          (string -> unit)  ->
+                          unit
+    [@@js.call "copy"]
+    (* ------------------------------------ *)
 
     (* -------------- PASTE --------------- *)
-    (* No need of error callback *)
-    method paste : (Js.js_string Js.t -> unit) -> unit Js.meth
-    (* Need both *)
-    method paste_cb : (Js.js_string Js.t -> unit) -> (Js.js_string Js.t -> unit) ->
-      unit Js.meth
+    (* paste [success_cb] *)
+    method paste        : (string -> unit) ->
+                          unit
+    [@@js.call "paste"]
+    (* paste_cb [success_cb] [error_cb] *)
+    method paste_cb     : (string -> unit) ->
+                          (string -> unit) ->
+                          unit
+    [@@js.call "paste"]
+    (* ------------------------------------ *)
   end
+(* -------------------------------------------------------------------------- *)
 
-val clipboard : unit -> clipboard Js.t
+(* -------------------------------------------------------------------------- *)
+val t : unit -> clipboard
+[@@js.get "cordova.plugins.clipboard"]
+(* -------------------------------------------------------------------------- *)
