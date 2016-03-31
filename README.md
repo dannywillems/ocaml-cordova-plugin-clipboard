@@ -29,8 +29,8 @@ See the official documentation
 The device plugin creates a new object called *cordova.plugins.clipboard*, but the object is
 available when the *deviceready* event is handled.
 
-We don't provide a *cordova.plugins.clipboard* variable in this plugin (as said in the official
-documentation on js_of_ocaml). If we did, *cordova.plugins.clipboard* will be set to **undefined**
+We don't provide a *clipboard* variable in this plugin (as said in the official
+documentation on js_of_ocaml). If we did, *clipboard* will be set to **undefined**
 because the *cordova.plugins.clipboard* object doesn't exist when we create the variable.
 
 Instead, we provide a function *Clipboard.clipboard* of type unit -> Clipboard.clipboard
@@ -38,7 +38,7 @@ Js.t which does the binding when you call it.
 So, use
 
 ```OCaml
-let on_device_ready =
+let on_device_ready _ =
   let c = Clipboard.clipboard () in
   (* Some code *)
 
