@@ -40,6 +40,5 @@ make && make clean
 make install && make remove && make clean
 
 # Test for the pin and -package
-opam remove gen_js_api
 opam pin add ${PLUGIN_PIN} ${URL}
 ocamlfind ocamlc -c -o test.cmo -package gen_js_api -package ${PLUGIN_PIN} -linkpkg test/test.ml
