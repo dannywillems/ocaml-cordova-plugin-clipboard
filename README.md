@@ -1,5 +1,7 @@
 # ocaml-cordova-plugin-clipboard
 
+* gen_js_api (master branch): [![Build Status](https://travis-ci.org/dannywillems/ocaml-cordova-plugin-clipboard.svg?branch=master)](https://travis-ci.org/dannywillems/ocaml-cordova-plugin-clipboard)
+
 Binding to
 [cordova-universal-clipboard](https://github.com/VersoSolutions/CordovaClipboard)
 
