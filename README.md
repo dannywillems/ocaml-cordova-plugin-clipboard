@@ -39,7 +39,7 @@ opam switch 4.03.0+beta1
 
 You can use opam by pinning the repository with
 ```Shell
-opam pin add cordova-plugin-clipbard https://github.com/dannywillems/ocaml-cordova-plugin-clipboard.git
+opam pin add cordova-plugin-clipboard https://github.com/dannywillems/ocaml-cordova-plugin-clipboard.git
 ```
 
 and to compile your project, use
