@@ -13,7 +13,7 @@ license:      "LGPL-3.0 with OCaml linking exception"
 version:      "dev"
 
 build: [
-  [make]
+  [make "all"]
   ]
 
 depends: [
