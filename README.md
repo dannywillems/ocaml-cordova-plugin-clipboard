@@ -3,7 +3,7 @@
 * gen_js_api (master branch): [![Build Status](https://travis-ci.org/dannywillems/ocaml-cordova-plugin-clipboard.svg?branch=master)](https://travis-ci.org/dannywillems/ocaml-cordova-plugin-clipboard)
 
 Binding to
-[cordova-universal-clipboard](https://github.com/VersoSolutions/CordovaClipboard)
+[cordova-universal-clipboard](https://github.com/VersoSolutions/CordovaCordova_clipboard)
 
 [Example
 application](https://github.com/dannywillems/ocaml-cordova-plugin-clipboard-example).
@@ -11,11 +11,11 @@ application](https://github.com/dannywillems/ocaml-cordova-plugin-clipboard-exam
 ## What does cordova-universal-clipboard do ?
 
 ```
-Clipboard management plugin for Cordova/PhoneGap that supports iOS, Android, and
+Cordova_clipboard management plugin for Cordova/PhoneGap that supports iOS, Android, and
 Windows Phone 8.
 ```
 
-Source: [cordova-universal-clipboard](https://github.com/VersoSolutions/CordovaClipboard)
+Source: [cordova-universal-clipboard](https://github.com/VersoSolutions/CordovaCordova_clipboard)
 
 ## Repository branches and tags
 
@@ -55,20 +55,20 @@ cordova plugin add cordova-universal-clipboard
 ## How to use ?
 
 See the official documentation
-[cordova-universal-clipboard](https://github.com/VersoSolutions/CordovaClipboard)
+[cordova-universal-clipboard](https://github.com/VersoSolutions/CordovaCordova_clipboard)
 
 ## ! BE CAREFUL !
 
 The device plugin creates a new object called *clipboard*, but the object is
 available when the *deviceready* event is handled.
 
-We provide a function *Clipboard.t* of type unit -> Clipboard.clipboard which
+We provide a function *Cordova_clipboard.t* of type unit -> Cordova_clipboard.clipboard which
 does the binding when you call it.
 So, use (with js_of_ocaml)
 
 ```OCaml
 let on_device_ready _ =
-  let c = Clipboard.t () in
+  let c = Cordova_clipboard.t () in
   (* Some code *)
 
 let _ =
