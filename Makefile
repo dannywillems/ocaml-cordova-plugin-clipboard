@@ -1,8 +1,4 @@
-################################################################################
-MLI_FILE		= cordova_clipboard.mli
-## Name which will be used in -package with ocamlfind
-LIB_NAME		= cordova-plugin-clipboard
-################################################################################
+include Makefile.conf
 
 ################################################################################
 CC				= ocamlc
