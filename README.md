@@ -3,7 +3,7 @@
 * gen_js_api (master branch): [![Build Status](https://travis-ci.org/dannywillems/ocaml-cordova-plugin-clipboard.svg?branch=master)](https://travis-ci.org/dannywillems/ocaml-cordova-plugin-clipboard)
 
 Binding to
-[cordova-universal-clipboard](https://github.com/VersoSolutions/Cordova_clipboard)
+[cordova-universal-clipboard](https://github.com/VersoSolutions/CordovaClipboard)
 
 [Example
 application](https://github.com/dannywillems/ocaml-cordova-plugin-clipboard-example).
@@ -15,7 +15,7 @@ Cordova_clipboard management plugin for Cordova/PhoneGap that supports iOS, Andr
 Windows Phone 8.
 ```
 
-Source: [cordova-universal-clipboard](https://github.com/VersoSolutions/Cordova_clipboard)
+Source: [cordova-universal-clipboard](https://github.com/VersoSolutions/CordovaClipboard)
 
 ## Repository branches and tags
 
@@ -55,7 +55,7 @@ cordova plugin add cordova-universal-clipboard
 ## How to use ?
 
 See the official documentation
-[cordova-universal-clipboard](https://github.com/VersoSolutions/Cordova_clipboard)
+[cordova-universal-clipboard](https://github.com/VersoSolutions/CordovaClipboard)
 
 ## ! BE CAREFUL !
 
