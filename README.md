@@ -57,22 +57,3 @@ cordova plugin add cordova-universal-clipboard
 
 See the official documentation
 [cordova-universal-clipboard](https://github.com/VersoSolutions/CordovaClipboard)
-
-## ! BE CAREFUL !
-
-The device plugin creates a new object called *clipboard*, but the object is
-available when the *deviceready* event is handled.
-
-We provide a function *Cordova_clipboard.t* of type unit -> Cordova_clipboard.clipboard which
-does the binding when you call it.
-So, use (with js_of_ocaml)
-
-```OCaml
-let on_device_ready _ =
-  let c = Cordova_clipboard.t () in
-  (* Some code *)
-
-let _ =
-  Dom.addEventListener Dom_html.document (Dom.Event.make "deviceready")
-  (Dom_html.handler on_device_ready) Js._false
-```
