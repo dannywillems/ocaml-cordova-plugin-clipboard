@@ -6,7 +6,7 @@ val copy :
   ?error_cb:((string -> unit) [@js.default (fun e -> ())])  ->
   unit                                                      ->
   unit
-[@@js.global "cordova.plugins.copy"]
+[@@js.global "cordova.plugins.clipboard.copy"]
 (* ------------------------------------ *)
 
 (* -------------- PASTE --------------- *)
@@ -16,5 +16,5 @@ val paste :
   ?error_cb:((string -> unit) [@js.default (fun e -> ())])  ->
   unit                                                      ->
   unit
-[@@js.global "cordova.plugins.paste"]
+[@@js.global "cordova.plugins.clipboard.paste"]
 (* ------------------------------------ *)
